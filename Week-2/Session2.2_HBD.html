@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD Message Creator</title>
+</head>
+<body>
+    <form>
+        <div>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9-_\.]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*">
+        </div>
+        
+        <div>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        
+        <div>
+          <label for="color">Message Color:</label>
+          <input type="color" id="color" name="color" value="#000000">
+        </div>
+        
+        <div>
+          <label for="blink">Number of Times the Message Blinks:</label>
+          <input type="number" id="blink" name="blink" min="0" max="10" value="0">
+        </div>
+        
+        <div class="form-row">
+          <label for="volume">Music Volume:</label>
+          <input type="range" id="volume" name="volume" min="0" max="50" value="20">
+        </div>
+        
+        <div class="form-row">
+          <button type="submit" id="send-message" name="send-message">Send Birthday Message</button>
+        </div>
+      </form>
+      
+</body>
+</html>
